@@ -34,8 +34,8 @@ def make_fhir_resource(doc, method=None):
 			resource = frappe.new_doc("FHIR Resource")
 			resource.reference_doctype = doc.doctype
 			resource.referance_doc_name = doc.name
-			resource.resource_data = json.dumps(resource_data, indent=2, sort_keys=True, default=str)
+			resource.fhir_resource_data = json.dumps(resource_data, indent=2, sort_keys=True, default=str)
 		else:
 			resource = frappe.get_doc("FHIR Resource", resource_exists)
-			resource.resource_data = json.dumps(resource_data, indent=2, sort_keys=True, default=str)
+			resource.fhir_resource_data = json.dumps(resource_data, indent=2, sort_keys=True, default=str)
 		resource.save(ignore_permissions=True)

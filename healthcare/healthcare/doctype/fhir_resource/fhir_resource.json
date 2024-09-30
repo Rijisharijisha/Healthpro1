@@ -9,7 +9,7 @@
   "naming_series",
   "reference_doctype",
   "referance_doc_name",
-  "resource_data"
+  "fhir_resource_data"
  ],
  "fields": [
   {
@@ -31,14 +31,14 @@
    "label": "Referance DocName"
   },
   {
-   "fieldname": "resource_data",
+   "fieldname": "fhir_resource_data",
    "fieldtype": "Code",
    "label": "Data"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-09-27 18:22:56.194495",
+ "modified": "2024-09-30 09:45:22.504560",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "FHIR Resource",
